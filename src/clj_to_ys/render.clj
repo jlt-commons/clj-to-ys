@@ -1,4 +1,4 @@
-(ns clj-to-yaml.render
+(ns clj-to-ys.render
   "Render grammar HIR to YS expression text.
 
   Forms are flat vectors: [:list c1 c2 ...].  `raw` builds expression text

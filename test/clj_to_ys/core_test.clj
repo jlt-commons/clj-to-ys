@@ -1,8 +1,8 @@
-(ns clj-to-yaml.core-test
+(ns clj-to-ys.core-test
   "Golden tests. Expected outputs follow the translations documented in the
   official YS 'From Clojure to YS' tutorial and cheat sheet."
   (:require [clojure.test :refer [deftest is testing]]
-            [clj-to-yaml.core :as c]))
+            [clj-to-ys.core :as c]))
 
 (deftest hello-world
   (is (= "!ys-0\nsay: 'Hello, World!'\n"

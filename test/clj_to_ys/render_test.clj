@@ -1,6 +1,6 @@
-(ns clj-to-yaml.render-test
+(ns clj-to-ys.render-test
   (:require [clojure.test :refer [deftest is testing]]
-            [clj-to-yaml.render :as r]))
+            [clj-to-ys.render :as r]))
 
 (deftest scalars
   (is (= "println" (r/expr [:sym "println"])))

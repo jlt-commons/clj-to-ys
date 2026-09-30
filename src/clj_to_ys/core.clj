@@ -1,4 +1,4 @@
-(ns clj-to-yaml.core
+(ns clj-to-ys.core
   "Translate Clojure source to YS (YAMLScript).
 
   Follows the translation patterns documented in the official YS
@@ -14,8 +14,8 @@
   * (range a b) -> (a .. b); .. is inclusive so a numeric literal end is
     decremented to compensate; symbol ends are left as-is.
   * str with string parts is folded into an interpolated string."
-  (:require [clj-to-yaml.grammar :as g]
-            [clj-to-yaml.render :as r]
+  (:require [clj-to-ys.grammar :as g]
+            [clj-to-ys.render :as r]
             [clojure.string :as str]))
 
 (def ^:private comparisons #{">" "<" ">=" "<="})

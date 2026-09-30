@@ -4,4 +4,4 @@
 
  :aliases
  {:test {:extra-paths ["test"]
-         :main-opts   ["-m" "clj-to-yaml.test-runner"]}}}
+         :main-opts   ["-m" "clj-to-ys.test-runner"]}}}

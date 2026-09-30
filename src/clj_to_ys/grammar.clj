@@ -1,4 +1,4 @@
-(ns clj-to-yaml.grammar
+(ns clj-to-ys.grammar
   "Clojure reader grammar (the portable scripting subset) via instaparse.
   Produces a token-text HIR: scalars keep their source text verbatim so
   rendering is lossless.

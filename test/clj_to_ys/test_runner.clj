@@ -1,17 +1,17 @@
-(ns clj-to-yaml.test-runner
+(ns clj-to-ys.test-runner
   "Hand-rolled test runner. `jolt -M:test` requires every listed test
   namespace and exits non-zero on any failure."
   (:require [clojure.test :as t]
-            clj-to-yaml.grammar-test
-            clj-to-yaml.render-test
-            clj-to-yaml.core-test
-            clj-to-yaml.main-test))
+            clj-to-ys.grammar-test
+            clj-to-ys.render-test
+            clj-to-ys.core-test
+            clj-to-ys.main-test))
 
 (def test-namespaces
-  '[clj-to-yaml.grammar-test
-    clj-to-yaml.render-test
-    clj-to-yaml.core-test
-    clj-to-yaml.main-test])
+  '[clj-to-ys.grammar-test
+    clj-to-ys.render-test
+    clj-to-ys.core-test
+    clj-to-ys.main-test])
 
 (defn -main [& _]
   (let [{:keys [fail error]} (apply t/run-tests test-namespaces)]

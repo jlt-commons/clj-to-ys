@@ -1,4 +1,4 @@
-# clj-to-yaml
+# clj-to-ys
 
 Translate Clojure source to [YS (YAMLScript)](https://yamlscript.org) — a
 Clojure library for [jolt](https://github.com/jolt-lang/jolt) (no JVM),
@@ -15,13 +15,13 @@ interpolated strings). The translations follow the official
 
 CLI:
 
-    jolt -m clj-to-yaml.main program.clj        # file
-    cat program.clj | jolt -m clj-to-yaml.main  # stdin
-    jolt -m clj-to-yaml.main --string '(println "hi")'
+    jolt -m clj-to-ys.main program.clj        # file
+    cat program.clj | jolt -m clj-to-ys.main  # stdin
+    jolt -m clj-to-ys.main --string '(println "hi")'
 
 Library:
 
-    (require '[clj-to-yaml.core :as c2y])
+    (require '[clj-to-ys.core :as c2y])
     (c2y/translate "(doseq [x (range 1 101)] (println x))")
     ;; => "!ys-0\neach x (1 .. 100):\n  say: x\n"
 

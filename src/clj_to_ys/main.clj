@@ -1,7 +1,7 @@
-(ns clj-to-yaml.main
-  "CLI: clj-to-yaml [--string EXPR | FILE]; stdin when no args.
+(ns clj-to-ys.main
+  "CLI: clj-to-ys [--string EXPR | FILE]; stdin when no args.
   Prints YS to stdout and returns it."
-  (:require [clj-to-yaml.core :as c]
+  (:require [clj-to-ys.core :as c]
             [clojure.string :as str]))
 
 (defn -main

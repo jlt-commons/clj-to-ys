@@ -1,6 +1,6 @@
-(ns clj-to-yaml.main-test
+(ns clj-to-ys.main-test
   (:require [clojure.test :refer [deftest is]]
-            [clj-to-yaml.main :as m]))
+            [clj-to-ys.main :as m]))
 
 (deftest translate-string-entry
   (is (= "!ys-0\nsay: 'hi'\n" (m/-main "--string" "(println \"hi\")"))))

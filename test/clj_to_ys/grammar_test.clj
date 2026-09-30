@@ -1,6 +1,6 @@
-(ns clj-to-yaml.grammar-test
+(ns clj-to-ys.grammar-test
   (:require [clojure.test :refer [deftest is testing]]
-            [clj-to-yaml.grammar :as g]))
+            [clj-to-ys.grammar :as g]))
 
 (deftest parses-a-simple-call
   (is (= [[:list [:sym "println"] [:str "Hello, World!"]]]
