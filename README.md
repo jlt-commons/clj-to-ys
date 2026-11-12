@@ -55,3 +55,7 @@ be rejected with a parse error rather than mistranslated.
     jolt -M:test
 
 Dependency: `io.github.jlt-commons/instaparse` git dep (see deps.edn).
+
+## License
+
+EPL 2.0, the same license as Jolt and Clojure. See [LICENSE](LICENSE).
